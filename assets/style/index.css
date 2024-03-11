@@ -1,0 +1,610 @@
+@import url(./reset.css);
+
+body {
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+    background-color: #f5f5f6;
+}
+
+.container { 
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+p {
+    color: #636B72;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Utility Classes-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.row-one, .price-row, .team-row, .learn-more {
+    flex-wrap: wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+section {
+    padding: 65px 0 65px 0;
+}
+
+.section-heading {
+    padding: 0px 0 25px 0;
+}
+
+.section-heading h3 {
+    font-size: 46.4px;
+    padding-top: 10px;
+}
+
+.section-heading h3 span {
+    color: #0067ff;
+}
+
+.section-heading h6 {
+    color: #0067ff;
+    background: #ecf4ff;
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.primary-icon-btn {
+    display: block;
+    width: 140px;
+    padding: 14px 0;
+    color: #fff;
+    background-color: #0067ff;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.primary-icon-btn:hover {
+    background-color: #0057d8;
+    transform: translateY(-5px);
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Header--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 56px;
+    /* background-color: rgb(255 255 255 / 0.05); */
+}
+
+/* header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: rgb(255 255 255)
+} */
+
+header .header-logo {
+    display: block;
+    max-width: 100%;
+    height: 35px;
+}
+
+nav ul li {
+    line-height: 56px;
+    list-style: none;
+    cursor: default;
+}
+
+nav ul li a {
+    color: rgb(255 255 255);
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4e96ff;
+}
+
+nav ul li i {
+    display: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav ul li:last-child {
+    display: none;
+}
+/*---------------------------------------------------------------*/
+/*-------------------Landing Page--------------------------------*/
+/*---------------------------------------------------------------*/
+
+.landing-page {
+    background: #fff url('../media/consultingland.jpg') center center / cover no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.landing-page section {
+    height: calc(100svh - 60px - 0px);
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.landing-page section h2 {
+    font-size: 52px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+.landing-page section .button {
+    padding-top: 12px;
+}
+
+.land-content {
+    width: 100%;
+}
+
+.land-content h2 {
+    line-height: 65px;
+}
+
+.land-content p {
+    color: #fff;
+    padding: 10px 0;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Content-------------------------------------*/
+/*---------------------------------------------------------------*/
+
+article {
+    width: 50%;
+}
+
+article h3 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+article p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+aside {
+    width: 50%;
+}
+
+.consulting-pic {
+    height: 400px;
+    width: 100%;
+    background: #f1f4f6 url('../media/consulting.jpg') center 25% / cover no-repeat;
+}
+
+article .button {
+    margin-top: 40px;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.who {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.who article h6 {
+    color: #0067ff;
+    background: #ecf4ff;
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Our Services--------------------------------*/
+/*---------------------------------------------------------------*/
+.columns {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    text-align: left;
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.03);
+}
+
+.columns h3 {
+    font-size: 23px;
+}
+
+.columns i {
+    font-size: 60px;
+    color: #0067ff;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Team----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.our-team {
+    background-color: #fff;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-columns {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    background-color: #fff;
+    border-radius: 6px;
+    height: 330px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 2.5px rgb(0 0 0 / 0.04);
+    padding: 20px;
+}
+
+.team-columns img {
+    border-radius: 50%;
+}
+
+.team-columns h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.team-columns p {
+    color: #0067ff;
+    font-weight: 700;
+}
+
+/* .team-columns img {
+    height: 100px;
+} */
+
+.team h6 {
+    letter-spacing: 2px;
+    width: 110px;
+}
+
+/* .team .section-heading {
+    padding: 75px 0 25px 0;
+} */
+
+/*---------------------------------------------------------------*/
+/*-------------------Pricing-------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.pricing {
+    padding: 65px 0 90px 0;
+}
+
+.pricing h6 {
+    letter-spacing: 2px;
+}
+
+.price-row {
+    text-align: center;
+}
+
+.price-columns {
+    flex: 0 0 calc(33.333333% - 13.333333px);
+    max-width: calc(33.333333% - 13.333333px);
+    background-color: #fff;
+    border-radius: 6px;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.03);
+}
+
+.price-columns i {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #0067ff;
+}
+
+.price-row span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.price-row p {
+    font-weight: 700;
+}
+
+.price-row h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.price-row ul li {
+    list-style: none;
+    text-align: left;
+    color: #636B72;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.standard {
+    background-color: #ebf3ff;
+}
+/*---------------------------------------------------------------*/
+/*-------------------Contact-------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.hero {
+    position: relative;
+    background: #191824 url('../media/contact.jpg') center 25% / cover no-repeat;
+    width: 100%;
+    height: 380px;
+    margin-bottom: 0;
+}
+
+.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+    content: '';
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 9999;
+}
+
+.hero .button {
+    z-index: 9999;
+}
+
+.learn-more {
+    padding: 40px 0 10px 0;
+}
+
+.prize-columns {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    background-color: #fff;
+    z-index: 9999;
+    border-radius: 6px;
+    height: 170px;
+    text-align: center;
+    padding: 20px;
+}
+
+.prize-columns i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0067ff;
+}
+
+.prize-columns p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.prize-columns span {
+    color: #0067ff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Footer--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+footer {
+    height: 100px;
+    background-color: #acacac;
+}
+
+footer p {
+    color: #000;
+    line-height: 100px;
+    font-size: 15px;
+}
+
+.list {
+    height: 100%;
+}
+
+.list ul {
+    gap: 10px;
+}
+
+.list ul li {
+    line-height: 100px;
+    list-style: none;
+}
+
+.list i {
+    font-size: 25px;
+    color: #000;
+}
+
+.list ul li a i {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+.list ul li a i:hover{
+    color: #0067ff;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------Media Queries------------------------------*/
+/*---------------------------------------------------------------*/
+@media (max-width: 930px) {
+    .column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .premium {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .price-columns ul li {
+        display: grid;
+        place-items: center;
+    }
+
+    .section-heading h3 {
+        font-size: 40px;
+    }
+
+    .prize-columns {
+        height: 100px;
+        padding: 10px;
+    }
+
+    .prize-columns i, .prize-columns p, .prize-columns span {
+        font-size: 20px;
+    }
+     
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .learn-more {
+        padding: 20px 0 5px 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .landing-page section h2 {
+        font-size: 45px;
+    }
+    
+    .who {
+        display: inline;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    article, aside {
+        width: 100%;
+    }
+
+    .consulting-pic {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 558px) {
+    nav ul li a {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: contents;
+    }
+
+    .landing-page section h2 {
+        font-size: 40px;
+    }
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-heading h3 {
+        font-size: 35px;
+    }
+
+    .prize-columns {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .prize-columns i, .prize-columns p, .prize-columns span, .list i {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        padding: 10px 0 5px 0;
+    }
+
+    .hero {
+        height: 430px;
+    }
+}
+
+@media (max-width: 558px) {
+    .landing-page section h2 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+

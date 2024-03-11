@@ -1,0 +1,489 @@
+@import url(./reset.css);
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: #f5f5f6;
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Utility Classes-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+p {
+    font-size: 16px;
+    color: #636B72;
+}
+
+section {
+    padding: 65px 0 65px 0;
+}
+
+.section-heading {
+    padding: 0px 0 25px 0;
+}
+
+.section-heading h3 {
+    font-size: 46.4px;
+    padding-top: 10px;
+}
+
+.section-heading h3 span {
+    color: #0067ff;
+}
+
+.section-heading h6 {
+    color: #0067ff;
+    background: #ecf4ff;
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.primary-icon-btn {
+    display: block;
+    width: 140px;
+    padding: 14px 0;
+    color: #fff;
+    background-color: #0067ff;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.primary-icon-btn:hover {
+    background-color: #0057d8;
+    transform: translateY(-5px);
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Header--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+header {
+    height: 56px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+header .header-logo {
+    display: block;
+    max-width: 100%;
+    height: 35px;
+}
+
+nav ul {
+    gap: 40px;
+}
+
+nav ul li {
+    line-height: 56px;
+    list-style: none;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4e96ff;
+}
+
+nav ul li i {
+    display: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav ul li:last-child {
+    display: none;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-------------------Hero Banner---------------------------------*/
+/*---------------------------------------------------------------*/
+
+.banner {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background: #191824 url('../media/second-banner.jpg') center / cover no-repeat;
+}
+
+
+.banner section {
+    width: 100%;
+    height: 100%;
+}
+
+.banner section h2 {
+    color: #fff
+}
+
+.main-banner {
+    text-align: center;
+}
+
+.main-banner h2 {
+    /* z-index: 9999; */
+    font-size: 60px;
+    padding: 0 0 100px 0 ;
+    font-weight: 700;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-------------------Content-------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.form-section {
+    background-color: #fff;
+}
+
+.form-section .container {
+    width: min(100% - 30px, 960px);
+    margin-inline: auto;
+}
+
+.form {
+    width: 100%;
+}
+
+form {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+form p {
+    margin-bottom: 8px;
+    color: #B31412;
+}
+
+input {
+    height: 46px;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    background-size: 16px;
+    border: 1px solid rgb(0 0 0 / 0.15);
+}
+
+input:focus {
+    border: 1px solid rgb(0 0 0 / 0.25);
+}
+
+input + input {
+    margin-top: 13px;
+}
+  
+input[type=button] {
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    background-color: #0067ff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+  
+input[type=button]:hover {
+    background-color: #0057d8;
+    transform: translateY(-5px);
+}
+
+form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px 0 0 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(0 0 0 / 0.15);
+    margin: 13px 0 10px 0;
+    resize: none;
+    transition: all 0.25s ease-in-out;
+}
+
+form textarea:focus {
+    border: 1px solid rgb(0 0 0 / 0.25);
+}
+
+.row + .row {
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.form aside {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    height: auto;
+    background-color: rgb(255 255 255 / 0.05);
+}
+
+.form aside iframe {
+    width: 100%;
+    height: 470px;
+}
+
+.form .container {
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Social Networks-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.socials {
+    padding: 65px 0 130px 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.column {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    padding: 20px;
+    width: 25%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.03);
+    background-color: #fff;
+}
+
+.row + .row {
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 50px;
+    color: #191824;
+}
+
+.column .icon i {
+    color: #0067ff;
+}
+
+.social-apps {
+    height: 100%;
+}
+  
+.social-apps ul li {
+    margin-top: 10px;
+    list-style: none;
+}
+  
+.social-apps ul li a i {
+    font-size: 25px;
+    color: #636B72;
+    transition: all 0.25s ease-in-out;
+}
+
+.social-apps ul li a i:hover {
+    color: #0067ff;
+    transform: translateY(-5px);
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------About Banner--------------------------------*/
+/*---------------------------------------------------------------*/
+
+.contact {
+    position: relative;
+    background: #191824 url('../media/contact.jpg') center / cover no-repeat;
+    width: 100%;
+    height: 380px;
+    z-index: 9999;
+}
+
+.secondary-banner {
+    width: 100%;
+}
+
+.contact::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+    content: '';
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 34px;
+    z-index: 9999;
+}
+
+.contact p {
+    color: #fff;
+    z-index: 9999;
+}
+
+.contact .button {
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Footer--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+footer {
+    height: 100px;
+    background-color: #acacac;
+}
+
+footer p {
+    color: #000;
+    line-height: 100px;
+    font-size: 15px;
+}
+
+.list {
+    height: 100%;
+}
+
+.list ul {
+    gap: 10px;
+}
+
+.list ul li {
+    line-height: 100px;
+    list-style: none;
+}
+
+.list i {
+    font-size: 25px;
+    color: #000;
+}
+
+.list ul li a i {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+.list ul li a i:hover{
+    color: #0067ff;
+}
+
+.row.flex {
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------Media Queries------------------------------*/
+/*---------------------------------------------------------------*/
+@media (max-width: 872px) {
+    .column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .section-heading h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 558px) {
+    nav ul li a {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: contents;
+    }
+
+    .form .container {
+        display: inline;
+    }
+
+    form {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .form aside {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 490px) {
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-heading h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .secondary-banner h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+}

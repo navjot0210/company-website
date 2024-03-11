@@ -1,0 +1,578 @@
+@import url(./reset.css);
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: #f5f5f6;
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Utility Classes-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+p {
+    font-size: 16px;
+    color: #636B72;
+}
+
+section {
+    padding: 65px 0 65px 0;
+}
+
+.section-heading {
+    padding: 0px 0 25px 0;
+}
+
+.section-heading h3 {
+    font-size: 46.4px;
+    padding-top: 10px;
+}
+
+.section-heading h3 span {
+    color: #0067ff;
+}
+
+.section-heading h6 {
+    color: #0067ff;
+    background: #ecf4ff;
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.primary-icon-btn {
+    display: block;
+    width: 140px;
+    padding: 14px 0;
+    color: #fff;
+    background-color: #0067ff;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.primary-icon-btn:hover {
+    background-color: #0057d8;
+    transform: translateY(-5px);
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Header--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+header {
+    height: 56px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+header .header-logo {
+    display: block;
+    max-width: 100%;
+    height: 35px;
+}
+
+nav ul {
+    gap: 40px;
+}
+
+nav ul li {
+    line-height: 56px;
+    list-style: none;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4e96ff;
+}
+
+nav ul li i {
+    display: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav ul li:last-child {
+    display: none;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Hero Banner---------------------------------*/
+/*---------------------------------------------------------------*/
+
+.banner {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background: #191824 url('../media/second-banner.jpg') center / cover no-repeat;
+}
+
+/* .banner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+    content: '';
+} */
+
+.banner section {
+    width: 100%;
+    height: 100%;
+}
+
+.banner section h2 {
+    color: #fff
+}
+
+.main-banner {
+    text-align: center;
+}
+
+.main-banner h2 {
+    /* z-index: 9999; */
+    font-size: 60px;
+    padding: 0 0 100px 0 ;
+    font-weight: 700;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Content-------------------------------------*/
+/*---------------------------------------------------------------*/
+
+article {
+    width: 50%;
+}
+
+article h3 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+article p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+aside {
+    width: 50%;
+}
+
+.consulting-pic {
+    height: 400px;
+    width: 100%;
+    background: #f1f4f6 url('../media/consulting.jpg') center 25% / cover no-repeat;
+}
+
+article .button {
+    margin-top: 40px;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.who {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.who article h6 {
+    color: #0067ff;
+    background: #ecf4ff;
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-------------------Services------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.column {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 0.03);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.column .icon i {
+    color:#0067ff;
+}
+
+.row + .row {
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Services------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.mission-section {
+    background-color: #fff;
+}
+
+.mission {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+.mission .section-heading {
+    padding: 0;
+}
+
+.mission .section-heading h3 {
+    font-size: 30px;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Team----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.our-team {
+    /* background-color: #fff; */
+    padding: 65px 0 130px 0;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-columns {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    background-color: #fff;
+    border-radius: 6px;
+    height: 330px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 2.5px rgb(0 0 0 / 0.04);
+    padding: 20px;
+}
+
+.team-columns img {
+    border-radius: 50%;
+}
+
+.team-columns h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.team-columns p {
+    color: #0067ff;
+    font-weight: 700;
+}
+
+/* .team-columns img {
+    height: 100px;
+} */
+
+.team h6 {
+    letter-spacing: 2px;
+    width: 110px;
+}
+
+/* .team .section-heading {
+    padding: 75px 0 25px 0;
+} */
+
+/*---------------------------------------------------------------*/
+/*-------------------Hero Banner---------------------------------*/
+/*---------------------------------------------------------------*/
+
+.contact {
+    position: relative;
+    background: #191824 url('../media/contact.jpg') center / cover no-repeat;
+    width: 100%;
+    height: 380px;
+    z-index: 9999;
+}
+
+.secondary-banner {
+    width: 100%;
+}
+
+.contact::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+    content: '';
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 34px;
+    z-index: 9999;
+}
+
+.contact p {
+    color: #fff;
+    z-index: 9999;
+}
+
+.contact .button {
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Footer--------------------------------------*/
+/*---------------------------------------------------------------*/
+
+footer {
+    height: 100px;
+    background-color: #acacac;
+}
+
+footer p {
+    color: #000;
+    line-height: 100px;
+    font-size: 15px;
+}
+
+.list {
+    height: 100%;
+}
+
+.list ul {
+    gap: 10px;
+}
+
+.list ul li {
+    line-height: 100px;
+    list-style: none;
+}
+
+.list i {
+    font-size: 25px;
+    color: #000;
+}
+
+.list ul li a i {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+}
+
+.list ul li a i:hover{
+    color: #0067ff;
+}
+
+.row, .team-row, .content {
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------Media Queries------------------------------*/
+/*---------------------------------------------------------------*/
+
+@media (max-width: 1032px) {
+    .column {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .section-heading h3, h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .who, .mission {
+        display: inline;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 490px) { 
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+  
+}
+
+@media (max-width: 930px) {
+    .premium {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .price-columns ul li {
+        display: grid;
+        place-items: center;
+    }
+
+    .prize-columns {
+        height: 100px;
+        padding: 10px;
+    }
+
+    .prize-columns i, .prize-columns p, .prize-columns span {
+        font-size: 20px;
+    }
+     
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .learn-more {
+        padding: 20px 0 5px 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .land-content section h2 {
+        font-size: 45px;
+    }
+
+    article, aside {
+        width: 100%;
+    }
+
+    .consulting-pic {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 558px) {
+    nav ul li a {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: contents;
+    }
+
+    .land-content section h2 {
+        font-size: 40px;
+    }
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-heading h3 {
+        font-size: 35px;
+    }
+
+    .prize-columns {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .prize-columns i, .prize-columns p, .prize-columns span, .list i {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        padding: 10px 0 5px 0;
+    }
+
+    .hero {
+        height: 430px;
+    }
+    .secondary-banner h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .secondary-banner h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
